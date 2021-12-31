@@ -1,0 +1,18 @@
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.shop .card {
+  background-color: #eef9fd;
+  padding: 25px;
+}
+.shop .card img {
+  width: 100%;
+}
+.shop .card p,
+.shop .card h5 {
+  font-size: 22px;
+  color: #707070;
+}

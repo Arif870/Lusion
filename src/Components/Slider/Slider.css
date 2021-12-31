@@ -1,0 +1,20 @@
+.hero {
+  background-color: #f5f7f2;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+.hero h3 {
+  font-size: 60px;
+  margin-top: -60px;
+  color: var(--primary-color);
+  text-align: center;
+  text-shadow: 2px -4px 0px white;
+}
+.hero p {
+  font-size: 26px;
+  color: #707070;
+}

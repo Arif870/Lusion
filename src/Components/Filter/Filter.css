@@ -1,0 +1,6 @@
+button.btnFilter i {
+  color: var(--primary-color);
+}
+button.btnFilter:hover i {
+  color: white;
+}

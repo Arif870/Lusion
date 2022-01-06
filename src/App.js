@@ -8,6 +8,7 @@ import Vegetables from "./Components/Pages/Vegetables/Vegetables";
 import Header from "./Components/Header/Header";
 import AllProducts from "./Components/AllProducts/AllProducts";
 import SingleProduct from "./Components/Pages/SingleProduct/SingleProduct";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/vegetables" element={<Vegetables />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

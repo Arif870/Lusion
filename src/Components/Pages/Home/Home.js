@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Slider />
       <Process />
-      <Shop />
+      <Shop productLink={"http://localhost:8000/products?_limit=8"} />
       <ProductsButton />
     </>
   );

@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Filter from "../Filter/Filter";
 import "./Shop.css";
 
-const Shop = () => {
+const Shop = ({ productLink }) => {
   let [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/products/")
+    fetch(productLink)
       .then(data => data.json())
       .then(data => setProducts(data));
   });
@@ -32,14 +33,16 @@ const Shop = () => {
         </div>
         <Row xs={1} md={3} lg={4} className="shop my-5">
           {products.map(product => (
-            <Col key={product.key} className="mt-4">
-              <Card style={{ border: "0" }}>
-                <img src={product.img} alt="" />
-                <p>{product.name}</p>
-                <div className="d-flex align-items-center justify-content-between">
-                  <h5> ${product.price}/kg</h5>
-                </div>
-              </Card>
+            <Col key={product.id} className="mt-4">
+              <Link to={"/shop/" + product.id}>
+                <Card style={{ border: "0" }}>
+                  <img src={product.img} alt="" />
+                  <p>{product.name}</p>
+                  <div className="d-flex align-items-center justify-content-between">
+                    <h5> ${product.price}/kg</h5>
+                  </div>
+                </Card>
+              </Link>
             </Col>
           ))}
         </Row>

@@ -36,9 +36,9 @@ const Filter = () => {
             <Col>
               <p style={{ fontSize: "20px" }}>Category</p>
               <input type="checkbox" name="fruits" id="fruits" />{" "}
-              <label for="fruits">Fruits</label> <br />
+              <label htmlFor="fruits">Fruits</label> <br />
               <input type="checkbox" name="vegetables" id="vegetables" />{" "}
-              <label for="vegetables">Vegetables</label>
+              <label htmlFor="vegetables">Vegetables</label>
             </Col>
             <Col>
               <p style={{ fontSize: "20px" }}>Tags</p>

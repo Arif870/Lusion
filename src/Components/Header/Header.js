@@ -20,7 +20,7 @@ const Header = () => {
         style={{ backgroundColor: "#f5f7f2" }}
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand as={Link} to="/">
             <img style={{ width: "70px" }} src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
